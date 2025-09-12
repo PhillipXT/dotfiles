@@ -3,6 +3,9 @@
 
 vim.g.mapleader = " "
 
+-- Insert an ANSI escape sequence
+vim.keymap.set("i", "<C-e>", "<C-v>27[", { desc = "Insert ANSI escape" })
+
 -- Shortcut to bring up the explorer window
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
